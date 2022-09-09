@@ -1,0 +1,57 @@
+Maven installation on jenkins server:
+
+cd /opt/maven
+
+https://maven.apache.org/download.cgi   maven link
+
+wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
+tar -xvzf apache-maven-3.8.6-bin.tar.gz
+cd /opt/maven/apache-maven-3.8.6   ---path 
+cd /root
+ls -la
+vi .bash_profile
+
+# User specific environment and startup programs
+
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.x86_64
+M2_HOME=/opt/maven/apache-maven-3.8.6
+M2=$M2_HOME/bin
+PATH=$PATH:$JAVA_HOME:$M2_HOME:$M2:$HOME/bin
+
+export PATH
+
+find / -name java
+
+echo $PATH   for check path
+
+Manage jenkins-manage plugins - maven invoker -install & maven integration tool- install
+Manage jenkins - global tool conf - ADD MAVEN - maven 
+
+
+install git in jenkins server - yum install git-y
+Manage jenkins-manage plugins - github -install
+Manage jenkins - global tool conf - ADD GIT - git
+
+New item : New job
+Maven project -configure - git - https://github.com/sureshbs1313/HELLOWORLD.git
+
+Branch - */master
+
+Build:
+POM.XML
+clean install package
+
+build now - sucess
+
+credentials:jenkins (global) - global cred - ADD cred (tomcat-users.xml) - username: deployer passwrd :deployer : ID & next :Tomcat_credentials
+
+Manage jenkins-manage plugins - deploy to container -install 
+
+Maven project- configuration - post build actions - deploy war/ear to a container - war : **/*.war   and credentials of tomcat and tomcat url : http://3.15.144.164:8080
+
+http://3.15.144.164:8080/webapp
+
+https://github.com/sureshbs1313/HELLOWORLD/blob/master/webapp/src/main/webapp/index.jsp   change in github and build and check again
+POLL SCM : */2 * * * *
+
+*/2 * * * * every 2mints  sucess
