@@ -1,0 +1,36 @@
+Jenkins installation and configuration on amazon linux and test build :
+
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+amazon-linux-extras install epel 
+amazon-linux-extras install java-openjdk11  
+
+#on RedHat/CentOs 
+#yum install epel-release # repository that provides 'daemonize'
+#yum install java-11-openjdk-devel
+yum install jenkins
+
+systemctl status jenkins
+systemctl start jenkins
+
+enable inbound 8080 port
+
+browser url:8080
+
+Configure java path
+Manage Jenkins > Global Tool Configuration > JDK ADD
+java
+/usr/lib/jvm/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.x86_64              by in jenkins server find / -name java 
+
+
+
+Test Jenkins Jobs
+Create “new item”
+Enter an item name – My-First-Project
+Chose Freestyle project
+
+Under the Build section Execute shell: echo "Welcome to Jenkins Demo"
+Save your job
+Build job
+Check "console output"
