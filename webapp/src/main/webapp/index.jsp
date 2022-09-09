@@ -1,4 +1,4 @@
-<h1> Hello, Hai prathima garu  !!! </h1>
+<h1> Hello, This is prathima its a maven project  !!! </h1>
 
 
 Hi all
