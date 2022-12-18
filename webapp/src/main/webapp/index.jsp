@@ -10,7 +10,7 @@
 <form>
 
 Name     : <input type="text" placeholder="Enter your Name"> <br><br>
-Place    : <input type="text" placeholder="Enter your Current Location"><br> <br>
+Place    : <input type="text" placeholder="Enter your current location"><br> <br>
 Comments : <input type="text" placeholder="What you feel about Manasa"><br><br>
 
 Select the emoji which suits her: <input type="radio" name="emoji">&#128150;<input type="radio" name="gender"> 	&#128120;<input type="radio" name="emoji">&#128124;  <input type="radio" name="emoji">&#128055; <input type="radio" name="emoji">&#128053; <input type="radio" name="emoji"> &#128131;<input type="radio" name="emoji"> &#128514; <input type="radio" name="emoji">&#128554; <input type="radio" name="emoji">&#128123; <input type="radio" name="emoji">&#128046;<br> <br>
