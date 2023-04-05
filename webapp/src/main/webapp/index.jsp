@@ -9,7 +9,7 @@
 
 <form>
 
-Nameee    : <input type="text" placeholder="Enter your Name"> <br><br>
+NAME    : <input type="text" placeholder="Enter your Name"> <br><br>
 Place    : <input type="text" placeholder="Enter your current location"><br> <br>
 Comments : <input type="text" placeholder="What you feel about Manasa"><br><br>
 
