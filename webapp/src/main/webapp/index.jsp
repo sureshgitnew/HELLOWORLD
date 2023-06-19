@@ -22,7 +22,7 @@ Select the Nick name for Manasa: <input type="radio" name="NN"> Chinni<input typ
 <button type="submit" value="submit"> Submit </button>
 </form><br>
 
-<b><a style="color:pink;" href="https://instagram.com/chinni.laddu?utm_medium=copy_link"> Manasa's Instagram link. </a> </b>
+<b><a style="color:pink;" href="https://instagram.com/chinni.laddu?utm_medium=copy_link"> suresh instagram. </a> </b>
  
 
 </body> 
