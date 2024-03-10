@@ -22,7 +22,7 @@ Select the Nick name for devopsssss: <input type="radio" name="NN"> DEVOPSSSS<in
 <button type="submit" value="submit"> Submit </button>
 </form><br>
 
-<b><a style="color:pink;" href="https://instagram.com/chinni.laddu?utm_medium=copy_link">  SBI TEST PROJECT. </a> </b>
+<b><a style="color:pink;" href="https://instagram.com/chinni.laddu?utm_medium=copy_link">  DEVOPS TEST PROJECT. </a> </b>
  
 
 </body> 
